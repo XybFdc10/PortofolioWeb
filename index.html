@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Journal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+      window.onload = function() {
+        alert("HARAP AKTIFKAN MODE DESKTOP TERLEBIH DAHULU SEBELUM MEMBUKA WEBSITE INI UNTUK KENYAMANAN-NYA:)");
+      };
+    </script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  </head>
+  <body>
+    <style>
+      .profile {
+        height: 50%;
+        border-radius: 50%;
+        left: 10px;
+        position: absolute;
+      }
+      
+      .a-img {
+        height: 50%;
+      }
+      
+      .a-navbar {
+        text-decoration: none;
+        color: white;
+        font-weight: 700;
+        padding: 15px;
+        font-size: 18px;
+      }
+      
+      .a-contact {
+        text-decoration: none;
+        color: black;
+        font-weight: 700;
+        font-size: 18px;
+      }
+      
+      .contact {
+        background-color: white;
+        width: 105px;
+        height: 35px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: 10px;
+      }
+      
+      .n-word {
+        width: 100%;
+        height: 85px;
+        background-color: #262626;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        /* text-align: center; */
+      }
+      
+      .content {
+        margin: 10px;
+      }
+      
+      .h1-wrapper-content {
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        font-family:arial, sans-serif;
+        font-weight: 300;
+        font-size: 40px;
+      }
+      
+      .p-content {
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+        margin-top: 5px;
+        padding: 5px;
+        font-family:arial, sans-serif;
+        font-weight: 300;
+        font-size: 40px;
+        color: white;
+      }
+      
+      .content-profile {
+        font-family:arial, sans-serif;
+        font-weight: 500;
+        font-size: 40px;
+      }
+      
+      .blue-line {
+        background-color: #0f7ea7;
+        width: 90px;
+        height: 10px;
+        border-radius: 5px;
+      }
+      
+      .content-phone {
+        height: 1%;
+        width: 3%;
+      }
+      
+      .content-email {
+        width: 3%;
+        height: 3%;
+      }
+      
+      .content-locate {
+        width: 3%;
+        height: 3%;
+      }
+      
+      .contact-item {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        margin-bottom: 10px;
+      }
+      
+      .email-item {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        margin-bottom: 10px;
+      }
+      
+      .locate-item {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        margin-bottom: 10px;
+      }
+      
+      .blue-circle {
+        background-color: #0f7ea7;
+        width: 15px;
+        height: 15px;
+        border-radius: 10px;
+      }
+      
+      .isi-keahlian {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      
+      .Professional {
+        margin-right: 50px;
+      }
+      
+      .Kerja-Sama {
+        margin-right: 58px;
+      }
+      
+      .Fleksibel {
+        margin-right: 76px;
+      }
+      
+      .Kreatif {
+        margin-right: 92px;
+      }
+      
+      .Organisasi {
+        margin-right: 64px;
+      }
+      
+      .content-pendidikan {
+        display: flex;
+        align-items: center;
+        gap: 180px;
+      }
+      
+      .bold {
+        font-weight: 300;
+      }
+      
+      .info-pendidikan {
+        display: flex;
+        align-items: center;
+        gap: 150px;
+      }
+      
+      .boldd {
+        font-weight: 600;
+      }
+      
+      footer{
+        background-color: #111;
+      }
+      
+    .footerContainer{
+      width: 100%;
+      height: 60vh;
+      padding: 70px 30px 20px ;
+    }
+    
+    .socialIcons{
+      display: flex;
+      justify-content: center;
+    }
+    
+    .socialIcons a{
+      text-decoration: none;
+      padding:  10px;
+      background-color: white;
+      margin: 10px;
+      border-radius: 50%;
+    }
+    
+    .socialIcons a i{
+      font-size: 2em;
+      color: black;
+      opacity: 0,9;
+    }
+    
+/* Hover affect on social media icon */
+
+    .socialIcons a:hover{
+      background-color: #111;
+      transition: 0.5s;
+    }
+    
+    .socialIcons a:hover i{
+      color: white;
+      transition: 0.5s;
+    }
+    
+    .footerNav{
+      margin: 30px 0;
+    }
+    
+    .footerNav ul{
+      display: flex;
+      justify-content: center;
+      list-style-type: none;
+    }
+    
+    .footerNav ul li a{
+      color:white;
+      margin: 20px;
+      text-decoration: none;
+      font-size: 1.3em;
+      opacity: 0.7;
+      transition: 0.5s;
+    }
+    
+    .footerNav ul li a:hover{
+      opacity: 1;
+    }
+    
+    .footerBottom{
+      background-color: #000;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    .footerBottom p{
+      color: white;
+    }
+    
+    .designer{
+      opacity: 0.7;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 400;
+      margin: 0px 5px;
+    }
+    
+    @media (max-width: 576px){
+      .footerNav ul{
+        flex-direction: column;
+      } 
+    .footerNav ul li{
+      width:100%;
+      text-align: center;
+      margin: 10px;
+    }
+    .socialIcons a{
+      padding: 8px;
+      margin: 4px;
+    }
+}
+      
+    </style>
+    <!-- NAVBAR LINE -->
+    <div class="n-word">
+      <a class="a-img" href="/">
+        <img class="profile" src="assets/images/Profile.png" alt="Profile.png"/>
+      </a>
+      <a class="a-navbar" href="/">HOME</a>
+      <a class="a-navbar" href="/">ABOUT ME</a>
+      <a class="a-navbar" href="/">DOCS</a>
+      <div class="contact">
+        <a class="a-contact" href="/">CONTACT</a>
+      </div>
+    </div>
+    
+    <!-- CONTENT LINE -->
+    <div class="content">
+      <div class="h1-wrapper-content">
+        <p><p class="p-content">__</p>R A H M A T <p class="p-content">__</p> G I L A N G <p class="p-content">__</p> R A M A D H A N <p class="p-content">__</p></p>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <p class="content-profile">PROFILE</p>
+            <div class="blue-line"></div>
+            <br>
+            <div id="hasil">Seorang Siswa Di SMKN 1 Tarumajaya Yang Sedang Mempelajari Tentang Bagaimana Website Bekerja Dan Ingin Menjadi Programmer Yang Handal Namun Enggan Untuk Mengoding.</div>
+            <br>
+             <p class="content-profile">KONTAK</p>
+            <div class="blue-line"></div>
+            <br>
+            <div class="info-wrapper">
+              <div class="contact-item">
+                <img class="content-phone" src="assets/images/phone.png" alt="phone.png" />
+                <span>+62-8963-7463-262</span>
+              </div>
+              <div class="email-item">
+                <img class="content-email" src="assets/images/email.png" alt="phone.png" />
+                <span>fdwlovers15@gmail.com</span>
+              </div>
+              <div class="locate-item">
+                <img class="content-locate" src="assets/images/locate.png" alt="phone.png" />
+                <span>Bekasi, Indonesia</span>
+              </div>
+            </div>
+            <br>
+            <p class="content-profile">KEAHLIAN</p>
+            <div class="blue-line"></div>
+            <br>
+            <div class="content-keahlian">
+              <div class="isi-keahlian">
+                <span class="Professional">Professional</span>
+                <div class="blue-circle"></div>
+                <div class="blue-circle"></div>
+                <div class="blue-circle"></div>
+                <div class="blue-circle"></div>
+                <div class="blue-circle"></div>
+              </div>
+              <div class="isi-keahlian">
+                <span class="Kerja-Sama">Kerja Sama</span>
+                <div class="blue-circle"></div>
+                <div class="blue-circle"></div>
+                <div class="blue-circle"></div>
+                <div class="blue-circle"></div>
+                <div class="blue-circle"></div>
+              </div>
+              <div class="isi-keahlian">
+                <span class="Fleksibel">Fleksibel</span>
+                <div class="blue-circle"></div>
+                <div class="blue-circle"></div>
+                <div class="blue-circle"></div>
+                <div class="blue-circle"></div>
+              </div>
+              <div class="isi-keahlian">
+                <span class="Kreatif">Kreatif</span>
+                <div class="blue-circle"></div>
+                <div class="blue-circle"></div>
+                <div class="blue-circle"></div>
+                <div class="blue-circle"></div>
+              </div>
+              <div class="isi-keahlian">
+                <span class="Organisasi">Organisasi</span>
+                <div class="blue-circle"></div>
+                <div class="blue-circle"></div>
+                <div class="blue-circle"></div>
+                <div class="blue-circle"></div>
+                <div class="blue-circle"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <p class="content-profile">PENDIDIKAN</p>
+            <div class="blue-line"></div>
+            <br>
+            <div class="content-pendidikan">
+              <span class="boldd">S1 Teknik Informatika</span>
+              <span class="bold">2020</span>
+            </div>
+            <span class="boldd">Universitas Gajah Mada</span>
+            <br>
+            <br>
+            <div class="info-pendidikan">
+              <span class="boldd">SMK Negeri 1 Tarumajaya</span>
+              <span class="bold">2018</span>
+            </div>
+            <br>
+            <br>
+            <p class="content-profile">PENGALAMAN</p>
+            <div class="blue-line"></div>
+            <br>
+            <div>
+              <span class="boldd">Admin Freelance</span>
+              <br>
+              <span class="boldd">Lush</span>
+              <br>
+              <br>
+              <span>• Merancang Konte Yang Menarik</span>
+              <br>
+              <span>• Menjadwalkan Konten</span>
+              <br>
+              <span>• Membangun Dan Menjaga Interaksi Dengan Followers</span>
+              <br>
+              <br>
+              <span class="boldd">Ketua Divisi Humas Bem Universitas Gajah Mada</span>
+              <br>
+              <br>
+              <span class="boldd">Anggota Divisi Humas Bem Universitas Gajah Mada</span>
+              <br>
+              <br>
+              <span class="boldd">Anggota OSIS SMK Negeri 1 Tarumajaya</span>
+              <br>
+              <br>
+              <span class="boldd">Anggota Paskibra SMK Negeri 1 Tarumajaya</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- FOOTER LINE -->
+    <footer>
+      <div class="footerContainer">
+        <div class="socialIcons">
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+          <a href=""><i class="fa-brands fa-google-plus"></i></a>
+          <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="footerNav">
+          <ul><li><a href="">Home</a></li>
+            <li><a href="">News</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact Us</a></li>
+            <li><a href="">our Team</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footerBottom">
+        <p>Copyright &copy;2023; Designed by <span class="designer">Gilang</span></p>
+      </div>
+    </footer>
+    
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    
+    <!-- JS SCRIPT -->
+    <script>
+      const hasilDiv = document.getElementById("hasil");
+      const teksAsli = hasilDiv.innerText;
+      const jumlahKarakter = 59;
+    
+      // Potong setiap 59 huruf dan tambahkan <br> supaya turun ke bawah
+      let hasilAkhir = '';
+      for (let i = 0; i < teksAsli.length; i += jumlahKarakter) {
+        hasilAkhir += teksAsli.slice(i, i + jumlahKarakter) + '<br>';
+      }
+    
+      hasilDiv.innerHTML = hasilAkhir;
+    </script>
+  </body>
+</html>
